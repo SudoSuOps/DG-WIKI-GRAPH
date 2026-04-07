@@ -1,0 +1,6 @@
+node_modules/
+__pycache__/
+*.pyc
+.env
+graphify-out/cache/
+.graphify_*
