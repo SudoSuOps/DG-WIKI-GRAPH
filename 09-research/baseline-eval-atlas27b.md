@@ -33,6 +33,32 @@ This is the moat. This is what SwarmDG-9B will fill.
 
 **Result: 1 partial / 15 = 7%**
 
+## Head-to-Head: Atlas-9B vs Base Qwen 3.5 9B
+
+Both models scored IDENTICALLY on DG trade knowledge — proving the 45K CRE pairs added zero DG-specific knowledge:
+
+| Trade Knowledge | Ground Truth | Atlas-9B (45K CRE pairs) | Base Qwen 3.5 9B (no training) |
+|----------------|-------------|-------------------------|-------------------------------|
+| CG Buchalter (800 DGs) | 800 stores, 25 yrs | Didn't know | Didn't know |
+| Colby Capital (6 states) | Preferred developer | Didn't know | Didn't know |
+| DG Lease — initial term | 15yr NNN | Said 5yr | Said 10yr |
+| Rent bumps / options | 10%/5yr, 6x5yr options | Partial (got bumps) | Partial (got bumps) |
+| $110K → total rent | $7.17M over 45yr | $7.4M (wrong term) | Wrong (wrong term) |
+| FL DG spread | 25-50 bps tighter | Said WIDER | Said wider/discount |
+| DG cap rate | ~6.70% | Said 4.5-6.5% | Said 6.0-7.5% |
+| AZO cap rate | ~5.34% | Said 5.25-6.0% | Said 7.5-9.0% |
+| AZO vs DG spread direction | AZO tighter than DG | Confused | Inverted (said AZO wider) |
+| 1031 = 30-35% of flow | 30-35% | Didn't know | Didn't know |
+| Spirit Realty (400+ DGs) | Spirit Realty | Guessed Blackstone | Guessed Blackstone |
+| pOpshelf cannibalization | Shop-in-shop failed | Generic | Generic |
+| FL DOR OWN_ADDR | Free parcel lookup | Didn't know | Didn't know |
+| 10K pop threshold | Profitable under 10K | Didn't know | Didn't know |
+| New construction premium | 75-100 bps | Didn't know | Said 100-200 bps |
+
+**Both models: 0 correct, 1 partial, 14 wrong. IDENTICAL on DG trade knowledge.**
+
+The fine-tune added zero DG trade knowledge — because it wasn't in the 45K training pairs. The cook works (94% PLATINUM on CRE mechanics). The ingredients determine the outcome.
+
 ## Additional Failures
 
 - Leaked entire thinking process as plain text on every response
