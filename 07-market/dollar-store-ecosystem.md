@@ -1,14 +1,14 @@
-# Dollar Store Ecosystem — The Full Investment-Grade NNN Universe
+# Dollar Store Ecosystem — Investment-Grade STNL Only
 
 **Updated**: 2026-04-07
-**Thesis**: SwarmDG-9B isn't just a Dollar General model. It's the dollar store NNN specialist.
+**Thesis**: SwarmDG-9B is the investment-grade dollar store NNN specialist. DG + Dollar Tree + Family Dollar (legacy). No Five Below — not investment grade, not a dollar store.
 
 ## The Ecosystem
 
-The dollar store STNL universe has four tenants. DG is the anchor. The model should know ALL of them — because the DG broker's client often says "I want a DG but I'd also look at a Family Dollar or Dollar Tree."
+The investment-grade dollar store STNL universe has two active tenants and one legacy. DG is the anchor. Dollar Tree is the competitor. Family Dollar is the deal flow (owners trading up to DG after losing their guarantee).
 
 ```
-THE FOUR DOLLAR STORE TENANTS:
+THE INVESTMENT-GRADE DOLLAR STORE TENANTS:
 
   DOLLAR GENERAL (DG)         — NYSE: DG
     Stores:     20,959
@@ -38,16 +38,11 @@ THE FOUR DOLLAR STORE TENANTS:
                 Dollar Tree closed 1,000+ FD stores before sale
                 Re-tenanting risk = wider caps
     
-  FIVE BELOW (FIVE)           — NYSE: FIVE
-    Stores:     ~1,750
-    Credit:     Not rated (but strong financials)
-    Revenue:    ~$3.5B
-    Lease:      10yr NNN typical
-    Cap rate:   6.00-7.00%
-    NOTE:       Not a dollar store (prices $1-$25)
-                But competes for same STNL investor capital
-                Growing rapidly — 150+ new stores/year
 ```
+
+**Five Below, 99 Cents Only, and similar value retailers are NOT in this domain.**
+They are not investment-grade, not dollar stores, and not the same lease class.
+This model is laser-focused: investment-grade dollar store STNL only.
 
 ## The July 2025 Earthquake — Family Dollar Goes Private
 
@@ -80,20 +75,20 @@ AFTER (post-July 2025):
 
 ## Ecosystem Comparison Table
 
-| Metric | Dollar General | Dollar Tree | Family Dollar | Five Below |
-|--------|---------------|-------------|---------------|-----------|
-| Ticker | DG | DLTR | PRIVATE | FIVE |
-| Stores | 20,959 | ~8,100 | 7,150 | ~1,750 |
-| Credit | BBB/Baa3 | BBB/Baa2 | NONE | Not rated |
-| Guarantee | Corporate | Corporate | NONE (PE) | Corporate |
-| Lease term | 15yr NNN | 10-15yr NNN | 10-15yr varies | 10yr NNN |
-| Bumps | 10% / 5yr | Varies | Varies | Varies |
-| Cap rate | 6.70-7.15% | 5.50-7.00% | 8.65%+ | 6.00-7.00% |
-| Avg sale | $1.57M | $1.8-2.5M | $800K-1.2M | $2-4M |
-| Market | Rural fortress | Suburban | Urban/suburban | Suburban teen |
-| Revenue | $41.2B | $16.4B | ~$13B | ~$3.5B |
-| Store size | 9,100 sqft | 10,000 sqft | 8,000-10,000 | 8,000-10,000 |
-| Expansion | 575 new/yr | Growing | Uncertain | 150+ new/yr |
+| Metric | Dollar General | Dollar Tree | Family Dollar (legacy) |
+|--------|---------------|-------------|----------------------|
+| Ticker | DG | DLTR | PRIVATE (PE-owned) |
+| Stores | 20,959 | ~8,100 | 7,150 |
+| Credit | BBB/Baa3 | BBB/Baa2 | NONE — lost July 2025 |
+| Guarantee | Corporate | Corporate | NONE (PE) |
+| Lease term | 15yr NNN | 10-15yr NNN | 10-15yr varies |
+| Bumps | 10% / 5yr | Varies | Varies |
+| Cap rate | 6.70-7.15% | 5.50-7.00% | 8.65%+ |
+| Avg sale | $1.57M | $1.8-2.5M | $800K-1.2M |
+| Market | Rural fortress | Suburban | Urban/suburban |
+| Revenue | $41.2B | $16.4B | ~$13B |
+| Store size | 9,100 sqft | 10,000 sqft | 8,000-10,000 |
+| Expansion | 575 new/yr | Growing | Uncertain (PE) |
 
 ## Credit Rating History
 
@@ -140,10 +135,6 @@ THE DG KING REFERRAL PLAYBOOK:
   Client wants a DOLLAR TREE:
     DG King refers to Dollar Tree specialist → 20% referral
     $2M × 3% × 20% = $12,000 referral fee
-    
-  Client wants a FIVE BELOW:
-    DG King refers to Five Below specialist → 20% referral
-    $3M × 3% × 20% = $18,000 referral fee
     
   THE ECOSYSTEM IS THE PRODUCT.
   Know DG deeply. Know the ecosystem broadly.
