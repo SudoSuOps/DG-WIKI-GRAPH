@@ -205,6 +205,59 @@ THE 1031 BUYER'S FINANCING CHALLENGE:
      Fastest "close" — just wire funds to DST sponsor.
 ```
 
+## The Financing Referral — 0.25% on the Loan
+
+The second commission. The wine on the steak dinner.
+
+```
+HOW IT WORKS:
+  DG King sells the property → buyer needs financing
+  DG King refers buyer to his lender → "use my guy at Arbor"
+  Lender pays 0.25% referral fee on loan amount to DG King
+  
+  NO EXTRA WORK. One phone call. One introduction.
+  The deal was happening anyway. The referral is gravy.
+
+THE MATH:
+  Sale price:           $1,574,000
+  Loan at 75% LTV:      $1,180,500
+  Referral fee (0.25%):  $2,951
+  
+  Commission on sale:    $23,550 (3% × 50/50 split)
+  + Financing referral:  $2,951
+  TOTAL PER DEAL:        $26,501
+
+  × 52 deals/year:
+    Commission:          $1,224,600
+    + Referral fees:     $153,452
+    TOTAL ANNUAL:        $1,378,052
+
+  The referral adds $153K/year for zero extra work.
+  That's the wine budget. That's the steak dinner upgrade.
+```
+
+Agent-DG integration:
+
+```
+/magic dg --close [deal-id] --refer-lender arbor
+
+  Agent-DG:
+  1. Buyer needs financing → auto-generates lender intro email
+  2. Includes deal summary: property, NOI, cap rate, DSCR calc
+  3. Sends to preferred lender (Arbor, CBRE, etc.)
+  4. Tracks referral: loan amount × 0.25% = referral fee
+  5. Logs in deal ledger → FEE includes commission + referral
+  
+  THE LENDER RELATIONSHIP:
+    Same principle as the DG owner relationship.
+    One lender. One relationship. They know your deals.
+    You send them 52 deals/year. They close fast.
+    They pay 0.25% on every loan. Everyone wins.
+    
+    The DG King had ONE lender for DG deals.
+    Agent-DG has ONE lender API integration.
+```
+
 ## What Agent-DG Does With This
 
 ```
