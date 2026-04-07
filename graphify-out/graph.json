@@ -1,0 +1,1627 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "dg_nnn_investment_thesis",
+        "label": "DG NNN Investment Thesis: BBB Credit + Absolute NNN + 15yr Term + 10% Bumps + Corporate Guarantee",
+        "nodes": [
+          "dollar_general_corporation",
+          "dg_nnn_lease",
+          "bbt_credit_rating",
+          "rent_bump_schedule",
+          "renewal_options",
+          "1031_exchange_investors",
+          "reit_net_lease_platforms",
+          "hnw_investors"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "07-market/lease-structures.md"
+      },
+      {
+        "id": "owner_identification_chain",
+        "label": "DG Owner Identification Chain: Store \u2192 DOR Parcel \u2192 Sunbiz Entity \u2192 EDGAR Parent \u2192 MAGIC Contact",
+        "nodes": [
+          "dollar_general_corporation",
+          "florida_dor",
+          "sunbiz_opencorp",
+          "edgar_filings",
+          "spirit_realty",
+          "realty_income",
+          "magic_pipeline",
+          "i_got_a_buyer_letter"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "07-market/edgar-usage.md"
+      },
+      {
+        "id": "build_to_suit_pipeline",
+        "label": "Build-to-Suit Pipeline: DG Selects Site \u2192 Preferred Developer Builds \u2192 Signs 15yr NNN \u2192 Developer Sells to Investor",
+        "nodes": [
+          "dollar_general_corporation",
+          "dg_site_selection",
+          "cg_buchalter",
+          "colby_capital",
+          "confluent_development",
+          "dg_nnn_lease",
+          "build_to_suit_economics",
+          "1031_exchange_investors",
+          "reit_net_lease_platforms"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "07-market/preferred-developers.md"
+      },
+      {
+        "id": "fl_cap_rate_premium_thesis",
+        "label": "Florida Cap Rate Premium: No Income Tax + Population Growth + 1031 Demand \u2192 25-50 bps Tighter Than National",
+        "nodes": [
+          "fl_market_overview",
+          "fl_1031_demand",
+          "cap_rate_benchmarks",
+          "1031_exchange_investors",
+          "hnw_investors",
+          "phase1_florida"
+        ],
+        "relation": "participate_in",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "01-stores/fl-market-overview.md"
+      },
+      {
+        "id": "bov_auto_generation_stack",
+        "label": "Automated BOV Stack: DOR Data \u2192 Lease Abstract \u2192 Cap Rate Benchmarks \u2192 BOV Engine \u2192 OM Template \u2192 PostGrid Mail",
+        "nodes": [
+          "florida_dor",
+          "dg_nnn_lease",
+          "cap_rate_benchmarks",
+          "bov_engine",
+          "offering_memorandum_template",
+          "i_got_a_buyer_letter",
+          "postgrid_api",
+          "magic_pipeline"
+        ],
+        "relation": "participate_in",
+        "confidence": "INFERRED",
+        "confidence_score": 0.9,
+        "source_file": "08-pipeline/magic-templates.md"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "Dollar General Corporation",
+      "file_type": "document",
+      "source_file": "07-market/dollar-general-corporate.md",
+      "id": "dollar_general_corporation",
+      "community": 1
+    },
+    {
+      "label": "DG as NNN Tenant (BBB Credit)",
+      "file_type": "document",
+      "source_file": "07-market/lease-structures.md",
+      "id": "dg_tenant_profile",
+      "community": 5
+    },
+    {
+      "label": "Standard DG NNN Lease (15yr Absolute NNN)",
+      "file_type": "document",
+      "source_file": "06-leases/dg-lease-template.md",
+      "id": "dg_nnn_lease",
+      "community": 0
+    },
+    {
+      "label": "DG Lease Anatomy (Market Reference)",
+      "file_type": "document",
+      "source_file": "07-market/lease-structures.md",
+      "id": "dg_lease_template_market",
+      "community": 0
+    },
+    {
+      "label": "Spirit Realty Capital (SRC)",
+      "file_type": "document",
+      "source_file": "07-market/dollar-general-corporate.md",
+      "id": "spirit_realty",
+      "community": 7
+    },
+    {
+      "label": "Realty Income (O)",
+      "file_type": "document",
+      "source_file": "07-market/buyer-profiles.md",
+      "id": "realty_income",
+      "community": 7
+    },
+    {
+      "label": "National Retail Properties (NNN)",
+      "file_type": "document",
+      "source_file": "07-market/dollar-general-corporate.md",
+      "id": "nnn_reit",
+      "community": 7
+    },
+    {
+      "label": "Essential Properties Realty (EPRT)",
+      "file_type": "document",
+      "source_file": "07-market/dollar-general-corporate.md",
+      "id": "essential_properties",
+      "community": 1
+    },
+    {
+      "label": "Agree Realty (ADC)",
+      "file_type": "document",
+      "source_file": "07-market/buyer-profiles.md",
+      "id": "agree_realty",
+      "community": 1
+    },
+    {
+      "label": "STORE Capital (GIC-acquired)",
+      "file_type": "document",
+      "source_file": "07-market/dollar-general-corporate.md",
+      "id": "store_capital",
+      "community": 1
+    },
+    {
+      "label": "DST (Delaware Statutory Trust) Investors",
+      "file_type": "document",
+      "source_file": "07-market/buyer-profiles.md",
+      "id": "dst_investors",
+      "community": 0
+    },
+    {
+      "label": "Local Private Investors / LLCs",
+      "file_type": "document",
+      "source_file": "07-market/dollar-general-corporate.md",
+      "id": "local_private_investors",
+      "community": 1
+    },
+    {
+      "label": "1031 Exchange Investors",
+      "file_type": "document",
+      "source_file": "07-market/buyer-profiles.md",
+      "id": "1031_exchange_investors",
+      "community": 6
+    },
+    {
+      "label": "High Net Worth (HNW) Individual Investors",
+      "file_type": "document",
+      "source_file": "07-market/buyer-profiles.md",
+      "id": "hnw_investors",
+      "community": 0
+    },
+    {
+      "label": "Syndication / Pooled Capital Buyers",
+      "file_type": "document",
+      "source_file": "07-market/buyer-profiles.md",
+      "id": "syndication_buyers",
+      "community": 0
+    },
+    {
+      "label": "Net Lease REIT Platforms",
+      "file_type": "document",
+      "source_file": "07-market/buyer-profiles.md",
+      "id": "reit_net_lease_platforms",
+      "community": 0
+    },
+    {
+      "label": "CG Buchalter (Developer)",
+      "file_type": "document",
+      "source_file": "07-market/preferred-developers.md",
+      "id": "cg_buchalter",
+      "community": 8
+    },
+    {
+      "label": "Colby Capital LLC (Developer)",
+      "file_type": "document",
+      "source_file": "07-market/preferred-developers.md",
+      "id": "colby_capital",
+      "community": 8
+    },
+    {
+      "label": "MBC Development (PA Developer)",
+      "file_type": "document",
+      "source_file": "07-market/preferred-developers.md",
+      "id": "mbc_development",
+      "community": 1
+    },
+    {
+      "label": "Confluent Development (North FL Developer)",
+      "file_type": "document",
+      "source_file": "07-market/preferred-developers.md",
+      "id": "confluent_development",
+      "community": 6
+    },
+    {
+      "label": "Ratcliff Companies (Southeast Developer)",
+      "file_type": "document",
+      "source_file": "07-market/preferred-developers.md",
+      "id": "ratcliff_companies",
+      "community": 1
+    },
+    {
+      "label": "Dollar Tree / Family Dollar (Competitor)",
+      "file_type": "document",
+      "source_file": "07-market/competitors-stnl.md",
+      "id": "dollar_tree_family_dollar",
+      "community": 5
+    },
+    {
+      "label": "AutoZone (STNL Competitor)",
+      "file_type": "document",
+      "source_file": "07-market/competitors-stnl.md",
+      "id": "autozone",
+      "community": 1
+    },
+    {
+      "label": "O'Reilly Automotive (STNL Competitor)",
+      "file_type": "document",
+      "source_file": "07-market/competitors-stnl.md",
+      "id": "oreilly_auto",
+      "community": 1
+    },
+    {
+      "label": "Tractor Supply Company (STNL Competitor)",
+      "file_type": "document",
+      "source_file": "07-market/competitors-stnl.md",
+      "id": "tractor_supply",
+      "community": 5
+    },
+    {
+      "label": "Advance Auto Parts (STNL Competitor)",
+      "file_type": "document",
+      "source_file": "07-market/competitors-stnl.md",
+      "id": "advance_auto",
+      "community": 1
+    },
+    {
+      "label": "DG Cap Rate Trends (Market Snapshot)",
+      "file_type": "document",
+      "source_file": "07-market/cap-rate-trends.md",
+      "id": "cap_rate_trends",
+      "community": 5
+    },
+    {
+      "label": "DG Cap Rate Benchmarks (BOV Reference)",
+      "file_type": "document",
+      "source_file": "05-comps/cap-rate-benchmarks.md",
+      "id": "cap_rate_benchmarks",
+      "community": 2
+    },
+    {
+      "label": "Traditional DG Store Format (9,100 sqft)",
+      "file_type": "document",
+      "source_file": "07-market/store-formats.md",
+      "id": "traditional_dg_format",
+      "community": 4
+    },
+    {
+      "label": "DGX Urban Format (3,600 sqft)",
+      "file_type": "document",
+      "source_file": "07-market/store-formats.md",
+      "id": "dgx_format",
+      "community": 4
+    },
+    {
+      "label": "DG Market Format (16,000 sqft)",
+      "file_type": "document",
+      "source_file": "07-market/store-formats.md",
+      "id": "dg_market_format",
+      "community": 4
+    },
+    {
+      "label": "pOpshelf Format (9,000 sqft Suburban)",
+      "file_type": "document",
+      "source_file": "07-market/store-formats.md",
+      "id": "popshelf_format",
+      "community": 4
+    },
+    {
+      "label": "DG Format Distribution (National Mix)",
+      "file_type": "document",
+      "source_file": "01-stores/format-distribution.md",
+      "id": "format_distribution",
+      "community": 4
+    },
+    {
+      "label": "Florida DG Market (Phase 1 Target)",
+      "file_type": "document",
+      "source_file": "01-stores/fl-market-overview.md",
+      "id": "fl_market_overview",
+      "community": 6
+    },
+    {
+      "label": "Florida DOR Tax Roll Data",
+      "file_type": "document",
+      "source_file": "01-stores/fl-market-overview.md",
+      "id": "florida_dor",
+      "community": 3
+    },
+    {
+      "label": "Sunbiz / OpenCorporates Entity Resolution",
+      "file_type": "document",
+      "source_file": "07-market/edgar-usage.md",
+      "id": "sunbiz_opencorp",
+      "community": 3
+    },
+    {
+      "label": "SEC EDGAR Filings (Corporate Intelligence)",
+      "file_type": "document",
+      "source_file": "07-market/edgar-usage.md",
+      "id": "edgar_filings",
+      "community": 7
+    },
+    {
+      "label": "MAGIC Pipeline (Meetings-Appraisals-Grind-Ink-Close)",
+      "file_type": "document",
+      "source_file": "08-pipeline/magic-templates.md",
+      "id": "magic_pipeline",
+      "community": 2
+    },
+    {
+      "label": "I Got A Buyer Direct Mail Letter",
+      "file_type": "document",
+      "source_file": "08-pipeline/magic-templates.md",
+      "id": "i_got_a_buyer_letter",
+      "community": 3
+    },
+    {
+      "label": "Offering Memorandum Template (4-Panel OM)",
+      "file_type": "document",
+      "source_file": "08-pipeline/magic-templates.md",
+      "id": "offering_memorandum_template",
+      "community": 2
+    },
+    {
+      "label": "LOI Template (Letter of Intent)",
+      "file_type": "document",
+      "source_file": "08-pipeline/magic-templates.md",
+      "id": "loi_template",
+      "community": 2
+    },
+    {
+      "label": "BOV Engine (Broker Opinion of Value)",
+      "file_type": "document",
+      "source_file": "05-comps/cap-rate-benchmarks.md",
+      "id": "bov_engine",
+      "community": 2
+    },
+    {
+      "label": "DG Site Selection Criteria",
+      "file_type": "document",
+      "source_file": "07-market/site-selection.md",
+      "id": "dg_site_selection",
+      "community": 0
+    },
+    {
+      "label": "Rural Fortress Strategy (Towns Under 20K)",
+      "file_type": "document",
+      "source_file": "07-market/site-selection.md",
+      "id": "rural_fortress_strategy",
+      "community": 5
+    },
+    {
+      "label": "DG Graph Schema (17-Field Parcel Record)",
+      "file_type": "document",
+      "source_file": "00-config/schema.md",
+      "id": "dg_graph_schema",
+      "community": 3
+    },
+    {
+      "label": "Agent-DG Intelligence Graph",
+      "file_type": "document",
+      "source_file": "README.md",
+      "id": "agent_dg_graph",
+      "community": 3
+    },
+    {
+      "label": "BBB Investment Grade Credit Rating",
+      "file_type": "document",
+      "source_file": "07-market/lease-structures.md",
+      "id": "bbt_credit_rating",
+      "community": 5
+    },
+    {
+      "label": "Rent Bump Schedule (10% Every 5 Years)",
+      "file_type": "document",
+      "source_file": "06-leases/dg-lease-template.md",
+      "id": "rent_bump_schedule",
+      "community": 0
+    },
+    {
+      "label": "Renewal Options (Six 5-Year Options)",
+      "file_type": "document",
+      "source_file": "06-leases/dg-lease-template.md",
+      "id": "renewal_options",
+      "community": 0
+    },
+    {
+      "label": "Dark Store Risk (Closure / Non-Renewal)",
+      "file_type": "document",
+      "source_file": "07-market/site-selection.md",
+      "id": "dark_store_risk",
+      "community": 0
+    },
+    {
+      "label": "PostGrid API (Automated Direct Mail)",
+      "file_type": "document",
+      "source_file": "08-pipeline/magic-templates.md",
+      "id": "postgrid_api",
+      "community": 3
+    },
+    {
+      "label": "Boulder Group Net Lease Research",
+      "file_type": "document",
+      "source_file": "05-comps/cap-rate-benchmarks.md",
+      "id": "boulder_group_research",
+      "community": 2
+    },
+    {
+      "label": "Stan Johnson / SRS Market Reports",
+      "file_type": "document",
+      "source_file": "05-comps/cap-rate-benchmarks.md",
+      "id": "stan_johnson_srs",
+      "community": 2
+    },
+    {
+      "label": "CoStar / Crexi Transaction Data",
+      "file_type": "document",
+      "source_file": "05-comps/cap-rate-benchmarks.md",
+      "id": "costar_crexi",
+      "community": 2
+    },
+    {
+      "label": "pOpshelf Strategic Uncertainty",
+      "file_type": "document",
+      "source_file": "01-stores/format-distribution.md",
+      "id": "popshelf_strategic_risk",
+      "community": 4
+    },
+    {
+      "label": "DG Cannibalization Strategy",
+      "file_type": "document",
+      "source_file": "07-market/site-selection.md",
+      "id": "dg_cannibalization_strategy",
+      "community": 0
+    },
+    {
+      "label": "Build-to-Suit Developer Economics",
+      "file_type": "document",
+      "source_file": "07-market/preferred-developers.md",
+      "id": "build_to_suit_economics",
+      "community": 8
+    },
+    {
+      "label": "Florida 1031 Exchange Capital Demand",
+      "file_type": "document",
+      "source_file": "01-stores/fl-market-overview.md",
+      "id": "fl_1031_demand",
+      "community": 6
+    },
+    {
+      "label": "New Construction vs Existing Cap Rate Spread",
+      "file_type": "document",
+      "source_file": "07-market/lease-structures.md",
+      "id": "new_vs_existing_spread",
+      "community": 2
+    },
+    {
+      "label": "Lease Red Flags (Deal Killers)",
+      "file_type": "document",
+      "source_file": "06-leases/dg-lease-template.md",
+      "id": "lease_red_flags",
+      "community": 0
+    },
+    {
+      "label": "DG Remodel as Renewal Commitment Signal",
+      "file_type": "document",
+      "source_file": "07-market/site-selection.md",
+      "id": "dg_remodel_signal",
+      "community": 0
+    },
+    {
+      "label": "Phase 1 Florida Owner Identification",
+      "file_type": "document",
+      "source_file": "README.md",
+      "id": "phase1_florida",
+      "community": 6
+    }
+  ],
+  "links": [
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/dollar-general-corporate.md",
+      "weight": 1.0,
+      "_src": "dollar_general_corporation",
+      "_tgt": "dg_tenant_profile",
+      "source": "dollar_general_corporation",
+      "target": "dg_tenant_profile"
+    },
+    {
+      "relation": "owns",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/dollar-general-corporate.md",
+      "weight": 1.0,
+      "_src": "spirit_realty",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "spirit_realty"
+    },
+    {
+      "relation": "owns",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/buyer-profiles.md",
+      "weight": 1.0,
+      "_src": "realty_income",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "realty_income"
+    },
+    {
+      "relation": "owns",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/dollar-general-corporate.md",
+      "weight": 1.0,
+      "_src": "nnn_reit",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "nnn_reit"
+    },
+    {
+      "relation": "owns",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/dollar-general-corporate.md",
+      "weight": 1.0,
+      "_src": "essential_properties",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "essential_properties"
+    },
+    {
+      "relation": "owns",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/buyer-profiles.md",
+      "weight": 1.0,
+      "_src": "agree_realty",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "agree_realty"
+    },
+    {
+      "relation": "owns",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/dollar-general-corporate.md",
+      "weight": 1.0,
+      "_src": "store_capital",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "store_capital"
+    },
+    {
+      "relation": "owns",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/dollar-general-corporate.md",
+      "weight": 1.0,
+      "_src": "local_private_investors",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "local_private_investors"
+    },
+    {
+      "relation": "develops",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/preferred-developers.md",
+      "weight": 1.0,
+      "_src": "cg_buchalter",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "cg_buchalter"
+    },
+    {
+      "relation": "develops",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/preferred-developers.md",
+      "weight": 1.0,
+      "_src": "colby_capital",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "colby_capital"
+    },
+    {
+      "relation": "develops",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/preferred-developers.md",
+      "weight": 1.0,
+      "_src": "mbc_development",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "mbc_development"
+    },
+    {
+      "relation": "develops",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/preferred-developers.md",
+      "weight": 1.0,
+      "_src": "confluent_development",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "confluent_development"
+    },
+    {
+      "relation": "develops",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/preferred-developers.md",
+      "weight": 1.0,
+      "_src": "ratcliff_companies",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "ratcliff_companies"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/competitors-stnl.md",
+      "weight": 1.0,
+      "_src": "dollar_tree_family_dollar",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "dollar_tree_family_dollar"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/competitors-stnl.md",
+      "weight": 1.0,
+      "_src": "tractor_supply",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "tractor_supply"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/competitors-stnl.md",
+      "weight": 0.7,
+      "_src": "autozone",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "autozone"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/competitors-stnl.md",
+      "weight": 0.7,
+      "_src": "oreilly_auto",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "oreilly_auto"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/competitors-stnl.md",
+      "weight": 0.7,
+      "_src": "advance_auto",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "advance_auto"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/edgar-usage.md",
+      "weight": 1.0,
+      "_src": "edgar_filings",
+      "_tgt": "dollar_general_corporation",
+      "source": "dollar_general_corporation",
+      "target": "edgar_filings"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/lease-structures.md",
+      "weight": 1.0,
+      "_src": "dg_tenant_profile",
+      "_tgt": "bbt_credit_rating",
+      "source": "dg_tenant_profile",
+      "target": "bbt_credit_rating"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "07-market/competitors-stnl.md",
+      "weight": 0.8,
+      "_src": "dg_tenant_profile",
+      "_tgt": "dollar_tree_family_dollar",
+      "source": "dg_tenant_profile",
+      "target": "dollar_tree_family_dollar"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "06-leases/dg-lease-template.md",
+      "weight": 1.0,
+      "_src": "dg_nnn_lease",
+      "_tgt": "rent_bump_schedule",
+      "source": "dg_nnn_lease",
+      "target": "rent_bump_schedule"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "06-leases/dg-lease-template.md",
+      "weight": 1.0,
+      "_src": "dg_nnn_lease",
+      "_tgt": "renewal_options",
+      "source": "dg_nnn_lease",
+      "target": "renewal_options"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "06-leases/dg-lease-template.md",
+      "weight": 1.0,
+      "_src": "dg_nnn_lease",
+      "_tgt": "lease_red_flags",
+      "source": "dg_nnn_lease",
+      "target": "lease_red_flags"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/lease-structures.md",
+      "weight": 0.9,
+      "_src": "dg_lease_template_market",
+      "_tgt": "dg_nnn_lease",
+      "source": "dg_nnn_lease",
+      "target": "dg_lease_template_market"
+    },
+    {
+      "relation": "buys",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/buyer-profiles.md",
+      "weight": 1.0,
+      "_src": "1031_exchange_investors",
+      "_tgt": "dg_nnn_lease",
+      "source": "dg_nnn_lease",
+      "target": "1031_exchange_investors"
+    },
+    {
+      "relation": "buys",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/buyer-profiles.md",
+      "weight": 1.0,
+      "_src": "dst_investors",
+      "_tgt": "dg_nnn_lease",
+      "source": "dg_nnn_lease",
+      "target": "dst_investors"
+    },
+    {
+      "relation": "buys",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/buyer-profiles.md",
+      "weight": 1.0,
+      "_src": "hnw_investors",
+      "_tgt": "dg_nnn_lease",
+      "source": "dg_nnn_lease",
+      "target": "hnw_investors"
+    },
+    {
+      "relation": "buys",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/buyer-profiles.md",
+      "weight": 1.0,
+      "_src": "syndication_buyers",
+      "_tgt": "dg_nnn_lease",
+      "source": "dg_nnn_lease",
+      "target": "syndication_buyers"
+    },
+    {
+      "relation": "buys",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/buyer-profiles.md",
+      "weight": 1.0,
+      "_src": "reit_net_lease_platforms",
+      "_tgt": "dg_nnn_lease",
+      "source": "dg_nnn_lease",
+      "target": "reit_net_lease_platforms"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/store-formats.md",
+      "weight": 1.0,
+      "_src": "traditional_dg_format",
+      "_tgt": "dg_nnn_lease",
+      "source": "dg_nnn_lease",
+      "target": "traditional_dg_format"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/lease-structures.md",
+      "weight": 1.0,
+      "_src": "bbt_credit_rating",
+      "_tgt": "dg_nnn_lease",
+      "source": "dg_nnn_lease",
+      "target": "bbt_credit_rating"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "08-pipeline/magic-templates.md",
+      "weight": 0.85,
+      "_src": "loi_template",
+      "_tgt": "dg_nnn_lease",
+      "source": "dg_nnn_lease",
+      "target": "loi_template"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/edgar-usage.md",
+      "weight": 1.0,
+      "_src": "edgar_filings",
+      "_tgt": "spirit_realty",
+      "source": "spirit_realty",
+      "target": "edgar_filings"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/edgar-usage.md",
+      "weight": 1.0,
+      "_src": "edgar_filings",
+      "_tgt": "realty_income",
+      "source": "realty_income",
+      "target": "edgar_filings"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "07-market/buyer-profiles.md",
+      "weight": 0.7,
+      "_src": "dst_investors",
+      "_tgt": "realty_income",
+      "source": "realty_income",
+      "target": "dst_investors"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/edgar-usage.md",
+      "weight": 1.0,
+      "_src": "edgar_filings",
+      "_tgt": "nnn_reit",
+      "source": "nnn_reit",
+      "target": "edgar_filings"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "01-stores/fl-market-overview.md",
+      "weight": 0.9,
+      "_src": "fl_1031_demand",
+      "_tgt": "1031_exchange_investors",
+      "source": "1031_exchange_investors",
+      "target": "fl_1031_demand"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/preferred-developers.md",
+      "weight": 1.0,
+      "_src": "build_to_suit_economics",
+      "_tgt": "cg_buchalter",
+      "source": "cg_buchalter",
+      "target": "build_to_suit_economics"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/preferred-developers.md",
+      "weight": 1.0,
+      "_src": "build_to_suit_economics",
+      "_tgt": "colby_capital",
+      "source": "colby_capital",
+      "target": "build_to_suit_economics"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/preferred-developers.md",
+      "weight": 1.0,
+      "_src": "phase1_florida",
+      "_tgt": "confluent_development",
+      "source": "confluent_development",
+      "target": "phase1_florida"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/site-selection.md",
+      "weight": 1.0,
+      "_src": "rural_fortress_strategy",
+      "_tgt": "dollar_tree_family_dollar",
+      "source": "dollar_tree_family_dollar",
+      "target": "rural_fortress_strategy"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/competitors-stnl.md",
+      "weight": 1.0,
+      "_src": "rural_fortress_strategy",
+      "_tgt": "tractor_supply",
+      "source": "tractor_supply",
+      "target": "rural_fortress_strategy"
+    },
+    {
+      "relation": "semantically_similar_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/cap-rate-trends.md",
+      "weight": 0.9,
+      "_src": "cap_rate_trends",
+      "_tgt": "cap_rate_benchmarks",
+      "source": "cap_rate_trends",
+      "target": "cap_rate_benchmarks"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "05-comps/cap-rate-benchmarks.md",
+      "weight": 0.85,
+      "_src": "bov_engine",
+      "_tgt": "cap_rate_trends",
+      "source": "cap_rate_trends",
+      "target": "bov_engine"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "07-market/site-selection.md",
+      "weight": 0.8,
+      "_src": "dark_store_risk",
+      "_tgt": "cap_rate_trends",
+      "source": "cap_rate_trends",
+      "target": "dark_store_risk"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/lease-structures.md",
+      "weight": 1.0,
+      "_src": "bbt_credit_rating",
+      "_tgt": "cap_rate_trends",
+      "source": "cap_rate_trends",
+      "target": "bbt_credit_rating"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "05-comps/cap-rate-benchmarks.md",
+      "weight": 1.0,
+      "_src": "bov_engine",
+      "_tgt": "cap_rate_benchmarks",
+      "source": "cap_rate_benchmarks",
+      "target": "bov_engine"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-stores/fl-market-overview.md",
+      "weight": 1.0,
+      "_src": "fl_market_overview",
+      "_tgt": "cap_rate_benchmarks",
+      "source": "cap_rate_benchmarks",
+      "target": "fl_market_overview"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "07-market/store-formats.md",
+      "weight": 0.9,
+      "_src": "traditional_dg_format",
+      "_tgt": "cap_rate_benchmarks",
+      "source": "cap_rate_benchmarks",
+      "target": "traditional_dg_format"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/lease-structures.md",
+      "weight": 1.0,
+      "_src": "new_vs_existing_spread",
+      "_tgt": "cap_rate_benchmarks",
+      "source": "cap_rate_benchmarks",
+      "target": "new_vs_existing_spread"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/preferred-developers.md",
+      "weight": 1.0,
+      "_src": "build_to_suit_economics",
+      "_tgt": "cap_rate_benchmarks",
+      "source": "cap_rate_benchmarks",
+      "target": "build_to_suit_economics"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "05-comps/cap-rate-benchmarks.md",
+      "weight": 1.0,
+      "_src": "boulder_group_research",
+      "_tgt": "cap_rate_benchmarks",
+      "source": "cap_rate_benchmarks",
+      "target": "boulder_group_research"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "05-comps/cap-rate-benchmarks.md",
+      "weight": 1.0,
+      "_src": "stan_johnson_srs",
+      "_tgt": "cap_rate_benchmarks",
+      "source": "cap_rate_benchmarks",
+      "target": "stan_johnson_srs"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "05-comps/cap-rate-benchmarks.md",
+      "weight": 1.0,
+      "_src": "costar_crexi",
+      "_tgt": "cap_rate_benchmarks",
+      "source": "cap_rate_benchmarks",
+      "target": "costar_crexi"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "08-pipeline/magic-templates.md",
+      "weight": 0.9,
+      "_src": "offering_memorandum_template",
+      "_tgt": "cap_rate_benchmarks",
+      "source": "cap_rate_benchmarks",
+      "target": "offering_memorandum_template"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "07-market/store-formats.md",
+      "weight": 0.7,
+      "_src": "dgx_format",
+      "_tgt": "traditional_dg_format",
+      "source": "traditional_dg_format",
+      "target": "dgx_format"
+    },
+    {
+      "relation": "competes_with",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "07-market/store-formats.md",
+      "weight": 0.7,
+      "_src": "popshelf_format",
+      "_tgt": "traditional_dg_format",
+      "source": "traditional_dg_format",
+      "target": "popshelf_format"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-stores/format-distribution.md",
+      "weight": 1.0,
+      "_src": "format_distribution",
+      "_tgt": "traditional_dg_format",
+      "source": "traditional_dg_format",
+      "target": "format_distribution"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-stores/format-distribution.md",
+      "weight": 1.0,
+      "_src": "format_distribution",
+      "_tgt": "dgx_format",
+      "source": "dgx_format",
+      "target": "format_distribution"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-stores/format-distribution.md",
+      "weight": 1.0,
+      "_src": "format_distribution",
+      "_tgt": "dg_market_format",
+      "source": "dg_market_format",
+      "target": "format_distribution"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-stores/format-distribution.md",
+      "weight": 1.0,
+      "_src": "popshelf_strategic_risk",
+      "_tgt": "popshelf_format",
+      "source": "popshelf_format",
+      "target": "popshelf_strategic_risk"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-stores/format-distribution.md",
+      "weight": 1.0,
+      "_src": "format_distribution",
+      "_tgt": "popshelf_format",
+      "source": "popshelf_format",
+      "target": "format_distribution"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-stores/fl-market-overview.md",
+      "weight": 1.0,
+      "_src": "fl_market_overview",
+      "_tgt": "florida_dor",
+      "source": "fl_market_overview",
+      "target": "florida_dor"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-stores/fl-market-overview.md",
+      "weight": 1.0,
+      "_src": "fl_market_overview",
+      "_tgt": "fl_1031_demand",
+      "source": "fl_market_overview",
+      "target": "fl_1031_demand"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-stores/fl-market-overview.md",
+      "weight": 1.0,
+      "_src": "fl_market_overview",
+      "_tgt": "phase1_florida",
+      "source": "fl_market_overview",
+      "target": "phase1_florida"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/site-selection.md",
+      "weight": 1.0,
+      "_src": "dg_site_selection",
+      "_tgt": "fl_market_overview",
+      "source": "fl_market_overview",
+      "target": "dg_site_selection"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08-pipeline/magic-templates.md",
+      "weight": 1.0,
+      "_src": "i_got_a_buyer_letter",
+      "_tgt": "florida_dor",
+      "source": "florida_dor",
+      "target": "i_got_a_buyer_letter"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "weight": 1.0,
+      "_src": "agent_dg_graph",
+      "_tgt": "florida_dor",
+      "source": "florida_dor",
+      "target": "agent_dg_graph"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/edgar-usage.md",
+      "weight": 1.0,
+      "_src": "florida_dor",
+      "_tgt": "sunbiz_opencorp",
+      "source": "florida_dor",
+      "target": "sunbiz_opencorp"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "00-config/schema.md",
+      "weight": 1.0,
+      "_src": "dg_graph_schema",
+      "_tgt": "florida_dor",
+      "source": "florida_dor",
+      "target": "dg_graph_schema"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "weight": 1.0,
+      "_src": "agent_dg_graph",
+      "_tgt": "sunbiz_opencorp",
+      "source": "sunbiz_opencorp",
+      "target": "agent_dg_graph"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/edgar-usage.md",
+      "weight": 1.0,
+      "_src": "sunbiz_opencorp",
+      "_tgt": "edgar_filings",
+      "source": "sunbiz_opencorp",
+      "target": "edgar_filings"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "00-config/schema.md",
+      "weight": 1.0,
+      "_src": "dg_graph_schema",
+      "_tgt": "sunbiz_opencorp",
+      "source": "sunbiz_opencorp",
+      "target": "dg_graph_schema"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/edgar-usage.md",
+      "weight": 1.0,
+      "_src": "agent_dg_graph",
+      "_tgt": "edgar_filings",
+      "source": "edgar_filings",
+      "target": "agent_dg_graph"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08-pipeline/magic-templates.md",
+      "weight": 1.0,
+      "_src": "magic_pipeline",
+      "_tgt": "bov_engine",
+      "source": "magic_pipeline",
+      "target": "bov_engine"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08-pipeline/magic-templates.md",
+      "weight": 1.0,
+      "_src": "magic_pipeline",
+      "_tgt": "i_got_a_buyer_letter",
+      "source": "magic_pipeline",
+      "target": "i_got_a_buyer_letter"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08-pipeline/magic-templates.md",
+      "weight": 1.0,
+      "_src": "magic_pipeline",
+      "_tgt": "offering_memorandum_template",
+      "source": "magic_pipeline",
+      "target": "offering_memorandum_template"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08-pipeline/magic-templates.md",
+      "weight": 1.0,
+      "_src": "magic_pipeline",
+      "_tgt": "loi_template",
+      "source": "magic_pipeline",
+      "target": "loi_template"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "weight": 1.0,
+      "_src": "agent_dg_graph",
+      "_tgt": "magic_pipeline",
+      "source": "magic_pipeline",
+      "target": "agent_dg_graph"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08-pipeline/magic-templates.md",
+      "weight": 1.0,
+      "_src": "i_got_a_buyer_letter",
+      "_tgt": "postgrid_api",
+      "source": "i_got_a_buyer_letter",
+      "target": "postgrid_api"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "08-pipeline/magic-templates.md",
+      "weight": 1.0,
+      "_src": "offering_memorandum_template",
+      "_tgt": "bov_engine",
+      "source": "offering_memorandum_template",
+      "target": "bov_engine"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "07-market/lease-structures.md",
+      "weight": 0.85,
+      "_src": "new_vs_existing_spread",
+      "_tgt": "bov_engine",
+      "source": "bov_engine",
+      "target": "new_vs_existing_spread"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/site-selection.md",
+      "weight": 1.0,
+      "_src": "dg_site_selection",
+      "_tgt": "rural_fortress_strategy",
+      "source": "dg_site_selection",
+      "target": "rural_fortress_strategy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/site-selection.md",
+      "weight": 1.0,
+      "_src": "dg_site_selection",
+      "_tgt": "dark_store_risk",
+      "source": "dg_site_selection",
+      "target": "dark_store_risk"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/site-selection.md",
+      "weight": 1.0,
+      "_src": "dg_site_selection",
+      "_tgt": "dg_cannibalization_strategy",
+      "source": "dg_site_selection",
+      "target": "dg_cannibalization_strategy"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/site-selection.md",
+      "weight": 1.0,
+      "_src": "dg_remodel_signal",
+      "_tgt": "dg_site_selection",
+      "source": "dg_site_selection",
+      "target": "dg_remodel_signal"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "00-config/schema.md",
+      "weight": 1.0,
+      "_src": "dg_graph_schema",
+      "_tgt": "agent_dg_graph",
+      "source": "dg_graph_schema",
+      "target": "agent_dg_graph"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "07-market/site-selection.md",
+      "weight": 0.85,
+      "_src": "dg_remodel_signal",
+      "_tgt": "renewal_options",
+      "source": "renewal_options",
+      "target": "dg_remodel_signal"
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "06-leases/dg-lease-template.md",
+      "weight": 1.0,
+      "_src": "renewal_options",
+      "_tgt": "dark_store_risk",
+      "source": "renewal_options",
+      "target": "dark_store_risk"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "06-leases/dg-lease-template.md",
+      "weight": 0.8,
+      "_src": "dark_store_risk",
+      "_tgt": "lease_red_flags",
+      "source": "dark_store_risk",
+      "target": "lease_red_flags"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "dg_nnn_investment_thesis",
+      "label": "DG NNN Investment Thesis: BBB Credit + Absolute NNN + 15yr Term + 10% Bumps + Corporate Guarantee",
+      "nodes": [
+        "dollar_general_corporation",
+        "dg_nnn_lease",
+        "bbt_credit_rating",
+        "rent_bump_schedule",
+        "renewal_options",
+        "1031_exchange_investors",
+        "reit_net_lease_platforms",
+        "hnw_investors"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/lease-structures.md"
+    },
+    {
+      "id": "owner_identification_chain",
+      "label": "DG Owner Identification Chain: Store \u2192 DOR Parcel \u2192 Sunbiz Entity \u2192 EDGAR Parent \u2192 MAGIC Contact",
+      "nodes": [
+        "dollar_general_corporation",
+        "florida_dor",
+        "sunbiz_opencorp",
+        "edgar_filings",
+        "spirit_realty",
+        "realty_income",
+        "magic_pipeline",
+        "i_got_a_buyer_letter"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/edgar-usage.md"
+    },
+    {
+      "id": "build_to_suit_pipeline",
+      "label": "Build-to-Suit Pipeline: DG Selects Site \u2192 Preferred Developer Builds \u2192 Signs 15yr NNN \u2192 Developer Sells to Investor",
+      "nodes": [
+        "dollar_general_corporation",
+        "dg_site_selection",
+        "cg_buchalter",
+        "colby_capital",
+        "confluent_development",
+        "dg_nnn_lease",
+        "build_to_suit_economics",
+        "1031_exchange_investors",
+        "reit_net_lease_platforms"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "07-market/preferred-developers.md"
+    },
+    {
+      "id": "fl_cap_rate_premium_thesis",
+      "label": "Florida Cap Rate Premium: No Income Tax + Population Growth + 1031 Demand \u2192 25-50 bps Tighter Than National",
+      "nodes": [
+        "fl_market_overview",
+        "fl_1031_demand",
+        "cap_rate_benchmarks",
+        "1031_exchange_investors",
+        "hnw_investors",
+        "phase1_florida"
+      ],
+      "relation": "participate_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "01-stores/fl-market-overview.md"
+    },
+    {
+      "id": "bov_auto_generation_stack",
+      "label": "Automated BOV Stack: DOR Data \u2192 Lease Abstract \u2192 Cap Rate Benchmarks \u2192 BOV Engine \u2192 OM Template \u2192 PostGrid Mail",
+      "nodes": [
+        "florida_dor",
+        "dg_nnn_lease",
+        "cap_rate_benchmarks",
+        "bov_engine",
+        "offering_memorandum_template",
+        "i_got_a_buyer_letter",
+        "postgrid_api",
+        "magic_pipeline"
+      ],
+      "relation": "participate_in",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "08-pipeline/magic-templates.md"
+    }
+  ]
+}
