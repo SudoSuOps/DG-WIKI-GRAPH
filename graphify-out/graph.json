@@ -91,6 +91,81 @@
         "confidence": "INFERRED",
         "confidence_score": 0.9,
         "source_file": "08-pipeline/magic-templates.md"
+      },
+      {
+        "id": "cmbs_dg_deal_stack",
+        "label": "CMBS DG Deal Financing Stack ($1M\u2013$3M)",
+        "nodes": [
+          "cmbs_conduit_lending",
+          "arbor_realty",
+          "cbre_capital_markets",
+          "walker_dunlop",
+          "dscr_requirement_120x",
+          "positive_leverage_spread"
+        ],
+        "relation": "forms_primary_financing_ecosystem_for_dg_stnl",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md"
+      },
+      {
+        "id": "dollar_store_ecosystem_credit_tier",
+        "label": "Dollar Store Ecosystem Credit Hierarchy",
+        "nodes": [
+          "dollar_tree_credit_baa2",
+          "dg_competitive_moat_widened",
+          "family_dollar_guarantee_loss",
+          "family_dollar_cap_rate_865"
+        ],
+        "relation": "establishes_investment_grade_hierarchy_post_fd_sale",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-store-ecosystem.md"
+      },
+      {
+        "id": "hot_zone_tier1_capital_concentration",
+        "label": "Tier 1 State Hot Zone Capital Concentration",
+        "nodes": [
+          "hot_zone_florida",
+          "hot_zone_texas",
+          "hot_zone_georgia",
+          "family_office_buyer",
+          "positive_leverage_spread"
+        ],
+        "relation": "concentrates_1031_and_family_office_capital_in_tier1_states",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/hot-zones-by-state.md"
+      },
+      {
+        "id": "baseline_eval_knowledge_gap_proof",
+        "label": "Baseline Eval Proves DG Knowledge Gap (Both Models 0/15)",
+        "nodes": [
+          "swarm_atlas_27b_baseline",
+          "atlas_27b_dg_trade_7pct",
+          "base_qwen35_9b_dg_0pct",
+          "dg_knowledge_gap",
+          "swarm_dg_9b_ship_threshold"
+        ],
+        "relation": "proves_dg_trade_knowledge_absent_from_all_base_models",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/baseline-eval-atlas27b.md"
+      },
+      {
+        "id": "academic_validation_layer",
+        "label": "Academic Research Validation Layer (Trade + Evidence)",
+        "nodes": [
+          "letdin_2023_tenant_credit_cap_rates",
+          "ling_2020_covid_cre_prices",
+          "spatial_cap_rate_2018",
+          "chenarides_2025_dollar_store_labor",
+          "dg_competitive_moat_widened"
+        ],
+        "relation": "provides_academic_evidence_layer_for_dg_investment_thesis",
+        "confidence": "INFERRED",
+        "confidence_score": 0.85,
+        "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/academic-papers.md"
       }
     ]
   },
@@ -100,434 +175,721 @@
       "file_type": "document",
       "source_file": "07-market/dollar-general-corporate.md",
       "id": "dollar_general_corporation",
-      "community": 1
+      "community": 0
     },
     {
       "label": "DG as NNN Tenant (BBB Credit)",
       "file_type": "document",
       "source_file": "07-market/lease-structures.md",
       "id": "dg_tenant_profile",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Standard DG NNN Lease (15yr Absolute NNN)",
       "file_type": "document",
       "source_file": "06-leases/dg-lease-template.md",
       "id": "dg_nnn_lease",
-      "community": 0
+      "community": 5
     },
     {
       "label": "DG Lease Anatomy (Market Reference)",
       "file_type": "document",
       "source_file": "07-market/lease-structures.md",
       "id": "dg_lease_template_market",
-      "community": 0
+      "community": 5
     },
     {
       "label": "Spirit Realty Capital (SRC)",
       "file_type": "document",
       "source_file": "07-market/dollar-general-corporate.md",
       "id": "spirit_realty",
-      "community": 7
+      "community": 0
     },
     {
       "label": "Realty Income (O)",
       "file_type": "document",
       "source_file": "07-market/buyer-profiles.md",
       "id": "realty_income",
-      "community": 7
+      "community": 0
     },
     {
       "label": "National Retail Properties (NNN)",
       "file_type": "document",
       "source_file": "07-market/dollar-general-corporate.md",
       "id": "nnn_reit",
-      "community": 7
+      "community": 0
     },
     {
       "label": "Essential Properties Realty (EPRT)",
       "file_type": "document",
       "source_file": "07-market/dollar-general-corporate.md",
       "id": "essential_properties",
-      "community": 1
+      "community": 0
     },
     {
       "label": "Agree Realty (ADC)",
       "file_type": "document",
       "source_file": "07-market/buyer-profiles.md",
       "id": "agree_realty",
-      "community": 1
+      "community": 0
     },
     {
       "label": "STORE Capital (GIC-acquired)",
       "file_type": "document",
       "source_file": "07-market/dollar-general-corporate.md",
       "id": "store_capital",
-      "community": 1
+      "community": 0
     },
     {
       "label": "DST (Delaware Statutory Trust) Investors",
       "file_type": "document",
       "source_file": "07-market/buyer-profiles.md",
       "id": "dst_investors",
-      "community": 0
+      "community": 5
     },
     {
       "label": "Local Private Investors / LLCs",
       "file_type": "document",
       "source_file": "07-market/dollar-general-corporate.md",
       "id": "local_private_investors",
-      "community": 1
+      "community": 0
     },
     {
       "label": "1031 Exchange Investors",
       "file_type": "document",
       "source_file": "07-market/buyer-profiles.md",
       "id": "1031_exchange_investors",
-      "community": 6
+      "community": 10
     },
     {
       "label": "High Net Worth (HNW) Individual Investors",
       "file_type": "document",
       "source_file": "07-market/buyer-profiles.md",
       "id": "hnw_investors",
-      "community": 0
+      "community": 5
     },
     {
       "label": "Syndication / Pooled Capital Buyers",
       "file_type": "document",
       "source_file": "07-market/buyer-profiles.md",
       "id": "syndication_buyers",
-      "community": 0
+      "community": 5
     },
     {
       "label": "Net Lease REIT Platforms",
       "file_type": "document",
       "source_file": "07-market/buyer-profiles.md",
       "id": "reit_net_lease_platforms",
-      "community": 0
+      "community": 5
     },
     {
       "label": "CG Buchalter (Developer)",
       "file_type": "document",
       "source_file": "07-market/preferred-developers.md",
       "id": "cg_buchalter",
-      "community": 8
+      "community": 0
     },
     {
       "label": "Colby Capital LLC (Developer)",
       "file_type": "document",
       "source_file": "07-market/preferred-developers.md",
       "id": "colby_capital",
-      "community": 8
+      "community": 0
     },
     {
       "label": "MBC Development (PA Developer)",
       "file_type": "document",
       "source_file": "07-market/preferred-developers.md",
       "id": "mbc_development",
-      "community": 1
+      "community": 0
     },
     {
       "label": "Confluent Development (North FL Developer)",
       "file_type": "document",
       "source_file": "07-market/preferred-developers.md",
       "id": "confluent_development",
-      "community": 6
+      "community": 10
     },
     {
       "label": "Ratcliff Companies (Southeast Developer)",
       "file_type": "document",
       "source_file": "07-market/preferred-developers.md",
       "id": "ratcliff_companies",
-      "community": 1
+      "community": 0
     },
     {
       "label": "Dollar Tree / Family Dollar (Competitor)",
       "file_type": "document",
       "source_file": "07-market/competitors-stnl.md",
       "id": "dollar_tree_family_dollar",
-      "community": 5
+      "community": 0
     },
     {
       "label": "AutoZone (STNL Competitor)",
       "file_type": "document",
       "source_file": "07-market/competitors-stnl.md",
       "id": "autozone",
-      "community": 1
+      "community": 0
     },
     {
       "label": "O'Reilly Automotive (STNL Competitor)",
       "file_type": "document",
       "source_file": "07-market/competitors-stnl.md",
       "id": "oreilly_auto",
-      "community": 1
+      "community": 0
     },
     {
       "label": "Tractor Supply Company (STNL Competitor)",
       "file_type": "document",
       "source_file": "07-market/competitors-stnl.md",
       "id": "tractor_supply",
-      "community": 5
+      "community": 0
     },
     {
       "label": "Advance Auto Parts (STNL Competitor)",
       "file_type": "document",
       "source_file": "07-market/competitors-stnl.md",
       "id": "advance_auto",
-      "community": 1
+      "community": 0
     },
     {
       "label": "DG Cap Rate Trends (Market Snapshot)",
       "file_type": "document",
       "source_file": "07-market/cap-rate-trends.md",
       "id": "cap_rate_trends",
-      "community": 5
+      "community": 1
     },
     {
       "label": "DG Cap Rate Benchmarks (BOV Reference)",
       "file_type": "document",
       "source_file": "05-comps/cap-rate-benchmarks.md",
       "id": "cap_rate_benchmarks",
-      "community": 2
+      "community": 1
     },
     {
       "label": "Traditional DG Store Format (9,100 sqft)",
       "file_type": "document",
       "source_file": "07-market/store-formats.md",
       "id": "traditional_dg_format",
-      "community": 4
+      "community": 8
     },
     {
       "label": "DGX Urban Format (3,600 sqft)",
       "file_type": "document",
       "source_file": "07-market/store-formats.md",
       "id": "dgx_format",
-      "community": 4
+      "community": 8
     },
     {
       "label": "DG Market Format (16,000 sqft)",
       "file_type": "document",
       "source_file": "07-market/store-formats.md",
       "id": "dg_market_format",
-      "community": 4
+      "community": 8
     },
     {
       "label": "pOpshelf Format (9,000 sqft Suburban)",
       "file_type": "document",
       "source_file": "07-market/store-formats.md",
       "id": "popshelf_format",
-      "community": 4
+      "community": 8
     },
     {
       "label": "DG Format Distribution (National Mix)",
       "file_type": "document",
       "source_file": "01-stores/format-distribution.md",
       "id": "format_distribution",
-      "community": 4
+      "community": 8
     },
     {
       "label": "Florida DG Market (Phase 1 Target)",
       "file_type": "document",
       "source_file": "01-stores/fl-market-overview.md",
       "id": "fl_market_overview",
-      "community": 6
+      "community": 10
     },
     {
       "label": "Florida DOR Tax Roll Data",
       "file_type": "document",
       "source_file": "01-stores/fl-market-overview.md",
       "id": "florida_dor",
-      "community": 3
+      "community": 7
     },
     {
       "label": "Sunbiz / OpenCorporates Entity Resolution",
       "file_type": "document",
       "source_file": "07-market/edgar-usage.md",
       "id": "sunbiz_opencorp",
-      "community": 3
+      "community": 7
     },
     {
       "label": "SEC EDGAR Filings (Corporate Intelligence)",
       "file_type": "document",
       "source_file": "07-market/edgar-usage.md",
       "id": "edgar_filings",
-      "community": 7
+      "community": 0
     },
     {
       "label": "MAGIC Pipeline (Meetings-Appraisals-Grind-Ink-Close)",
       "file_type": "document",
       "source_file": "08-pipeline/magic-templates.md",
       "id": "magic_pipeline",
-      "community": 2
+      "community": 1
     },
     {
       "label": "I Got A Buyer Direct Mail Letter",
       "file_type": "document",
       "source_file": "08-pipeline/magic-templates.md",
       "id": "i_got_a_buyer_letter",
-      "community": 3
+      "community": 7
     },
     {
       "label": "Offering Memorandum Template (4-Panel OM)",
       "file_type": "document",
       "source_file": "08-pipeline/magic-templates.md",
       "id": "offering_memorandum_template",
-      "community": 2
+      "community": 1
     },
     {
       "label": "LOI Template (Letter of Intent)",
       "file_type": "document",
       "source_file": "08-pipeline/magic-templates.md",
       "id": "loi_template",
-      "community": 2
+      "community": 1
     },
     {
       "label": "BOV Engine (Broker Opinion of Value)",
       "file_type": "document",
       "source_file": "05-comps/cap-rate-benchmarks.md",
       "id": "bov_engine",
-      "community": 2
+      "community": 1
     },
     {
       "label": "DG Site Selection Criteria",
       "file_type": "document",
       "source_file": "07-market/site-selection.md",
       "id": "dg_site_selection",
-      "community": 0
+      "community": 2
     },
     {
       "label": "Rural Fortress Strategy (Towns Under 20K)",
       "file_type": "document",
       "source_file": "07-market/site-selection.md",
       "id": "rural_fortress_strategy",
-      "community": 5
+      "community": 0
     },
     {
       "label": "DG Graph Schema (17-Field Parcel Record)",
       "file_type": "document",
       "source_file": "00-config/schema.md",
       "id": "dg_graph_schema",
-      "community": 3
+      "community": 7
     },
     {
       "label": "Agent-DG Intelligence Graph",
       "file_type": "document",
       "source_file": "README.md",
       "id": "agent_dg_graph",
-      "community": 3
+      "community": 7
     },
     {
       "label": "BBB Investment Grade Credit Rating",
       "file_type": "document",
       "source_file": "07-market/lease-structures.md",
       "id": "bbt_credit_rating",
-      "community": 5
+      "community": 1
     },
     {
       "label": "Rent Bump Schedule (10% Every 5 Years)",
       "file_type": "document",
       "source_file": "06-leases/dg-lease-template.md",
       "id": "rent_bump_schedule",
-      "community": 0
+      "community": 5
     },
     {
       "label": "Renewal Options (Six 5-Year Options)",
       "file_type": "document",
       "source_file": "06-leases/dg-lease-template.md",
       "id": "renewal_options",
-      "community": 0
+      "community": 2
     },
     {
       "label": "Dark Store Risk (Closure / Non-Renewal)",
       "file_type": "document",
       "source_file": "07-market/site-selection.md",
       "id": "dark_store_risk",
-      "community": 0
+      "community": 2
     },
     {
       "label": "PostGrid API (Automated Direct Mail)",
       "file_type": "document",
       "source_file": "08-pipeline/magic-templates.md",
       "id": "postgrid_api",
-      "community": 3
+      "community": 7
     },
     {
       "label": "Boulder Group Net Lease Research",
       "file_type": "document",
       "source_file": "05-comps/cap-rate-benchmarks.md",
       "id": "boulder_group_research",
-      "community": 2
+      "community": 1
     },
     {
       "label": "Stan Johnson / SRS Market Reports",
       "file_type": "document",
       "source_file": "05-comps/cap-rate-benchmarks.md",
       "id": "stan_johnson_srs",
-      "community": 2
+      "community": 1
     },
     {
       "label": "CoStar / Crexi Transaction Data",
       "file_type": "document",
       "source_file": "05-comps/cap-rate-benchmarks.md",
       "id": "costar_crexi",
-      "community": 2
+      "community": 1
     },
     {
       "label": "pOpshelf Strategic Uncertainty",
       "file_type": "document",
       "source_file": "01-stores/format-distribution.md",
       "id": "popshelf_strategic_risk",
-      "community": 4
+      "community": 8
     },
     {
       "label": "DG Cannibalization Strategy",
       "file_type": "document",
       "source_file": "07-market/site-selection.md",
       "id": "dg_cannibalization_strategy",
-      "community": 0
+      "community": 2
     },
     {
       "label": "Build-to-Suit Developer Economics",
       "file_type": "document",
       "source_file": "07-market/preferred-developers.md",
       "id": "build_to_suit_economics",
-      "community": 8
+      "community": 0
     },
     {
       "label": "Florida 1031 Exchange Capital Demand",
       "file_type": "document",
       "source_file": "01-stores/fl-market-overview.md",
       "id": "fl_1031_demand",
-      "community": 6
+      "community": 10
     },
     {
       "label": "New Construction vs Existing Cap Rate Spread",
       "file_type": "document",
       "source_file": "07-market/lease-structures.md",
       "id": "new_vs_existing_spread",
-      "community": 2
+      "community": 1
     },
     {
       "label": "Lease Red Flags (Deal Killers)",
       "file_type": "document",
       "source_file": "06-leases/dg-lease-template.md",
       "id": "lease_red_flags",
-      "community": 0
+      "community": 5
     },
     {
       "label": "DG Remodel as Renewal Commitment Signal",
       "file_type": "document",
       "source_file": "07-market/site-selection.md",
       "id": "dg_remodel_signal",
-      "community": 0
+      "community": 2
     },
     {
       "label": "Phase 1 Florida Owner Identification",
       "file_type": "document",
       "source_file": "README.md",
       "id": "phase1_florida",
+      "community": 10
+    },
+    {
+      "label": "CMBS/Conduit Lending",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "id": "cmbs_conduit_lending",
+      "community": 4
+    },
+    {
+      "label": "Life Company Lending",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "id": "life_company_lending",
       "community": 6
+    },
+    {
+      "label": "Arbor Realty Trust",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "id": "arbor_realty",
+      "community": 4
+    },
+    {
+      "label": "CBRE Capital Markets",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "id": "cbre_capital_markets",
+      "community": 4
+    },
+    {
+      "label": "Goldman Sachs CMBS (GSMS)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "id": "goldman_sachs_cmbs",
+      "community": 4
+    },
+    {
+      "label": "JP Morgan CMBS (JPMCC/JPMDB)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "id": "jp_morgan_cmbs",
+      "community": 4
+    },
+    {
+      "label": "Walker & Dunlop",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "id": "walker_dunlop",
+      "community": 4
+    },
+    {
+      "label": "Positive Leverage Spread (Cap 6.70% vs Mortgage 5.88%)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "id": "positive_leverage_spread",
+      "community": 4
+    },
+    {
+      "label": "DSCR Minimum 1.20x (Investment-Grade Tenant)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "id": "dscr_requirement_120x",
+      "community": 4
+    },
+    {
+      "label": "Lender Financing Referral Fee (0.25% of Loan)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "id": "financing_referral_025pct",
+      "community": 4
+    },
+    {
+      "label": "Dollar Tree Corporation (DLTR)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-tree-corporate.md",
+      "id": "dollar_tree_corporate",
+      "community": 3
+    },
+    {
+      "label": "Dollar Tree Credit Rating Baa2 (Above DG)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-tree-corporate.md",
+      "id": "dollar_tree_credit_baa2",
+      "community": 3
+    },
+    {
+      "label": "Dollar Tree Cap Rate 7.57% (Q1 2026)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-tree-corporate.md",
+      "id": "dollar_tree_cap_rate_757",
+      "community": 3
+    },
+    {
+      "label": "Dollar Tree Suburban / Affluent Strategy",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-tree-corporate.md",
+      "id": "dollar_tree_suburban_strategy",
+      "community": 3
+    },
+    {
+      "label": "Family Dollar PE Sale (July 2025, $1B)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-store-ecosystem.md",
+      "id": "family_dollar_pe_sale",
+      "community": 3
+    },
+    {
+      "label": "Family Dollar Corporate Guarantee Eliminated (Post-July 2025)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-store-ecosystem.md",
+      "id": "family_dollar_guarantee_loss",
+      "community": 3
+    },
+    {
+      "label": "Family Dollar Cap Rate 8.65%+ (No Guarantee)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-store-ecosystem.md",
+      "id": "family_dollar_cap_rate_865",
+      "community": 3
+    },
+    {
+      "label": "DG Competitive Moat Widened (Only IG Dollar Store >10K Locations)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-store-ecosystem.md",
+      "id": "dg_competitive_moat_widened",
+      "community": 3
+    },
+    {
+      "label": "Family Office Buyer (DG NNN)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/family-office-buyers.md",
+      "id": "family_office_buyer",
+      "community": 6
+    },
+    {
+      "label": "Family Office Hold-Forever Strategy (10\u201330+ yr)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/family-office-buyers.md",
+      "id": "family_office_hold_forever",
+      "community": 6
+    },
+    {
+      "label": "Step-Up Basis at Death Tax Strategy",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/family-office-buyers.md",
+      "id": "step_up_basis_tax_strategy",
+      "community": 6
+    },
+    {
+      "label": "Hot Zone: Florida (Tightest Caps, 1031 Magnet)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/hot-zones-by-state.md",
+      "id": "hot_zone_florida",
+      "community": 6
+    },
+    {
+      "label": "Hot Zone: Texas (1,844 Stores, HOT)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/hot-zones-by-state.md",
+      "id": "hot_zone_texas",
+      "community": 6
+    },
+    {
+      "label": "Yield Zone: Ohio (7.00\u20137.75% Cap, Best Yield)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/hot-zones-by-state.md",
+      "id": "yield_zone_ohio",
+      "community": 11
+    },
+    {
+      "label": "Yield Zone: Mississippi (7.25\u20138.00%, Widest Caps)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/hot-zones-by-state.md",
+      "id": "yield_zone_mississippi",
+      "community": 11
+    },
+    {
+      "label": "Hot Zone: Georgia (1,050+ Stores, HOT)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/hot-zones-by-state.md",
+      "id": "hot_zone_georgia",
+      "community": 2
+    },
+    {
+      "label": "Hot Zone: North Carolina (1,050+ Stores, HOT)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/hot-zones-by-state.md",
+      "id": "hot_zone_north_carolina",
+      "community": 2
+    },
+    {
+      "label": "FY2025 DG Closure: 96 Stores (0.67% of Fleet)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/closures-and-risk.md",
+      "id": "fy2025_closure_96_stores",
+      "community": 2
+    },
+    {
+      "label": "FY2025 pOpshelf Closure: 45 Stores",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/closures-and-risk.md",
+      "id": "popshelf_closure_45_stores",
+      "community": 2
+    },
+    {
+      "label": "Remodel Signal = Renewal Commitment (85%+ Probability)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/closures-and-risk.md",
+      "id": "remodel_signal_renewal",
+      "community": 2
+    },
+    {
+      "label": "At-Risk / Dark Store Cap Rate 8.50%+",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/closures-and-risk.md",
+      "id": "dark_store_cap_rate_850plus",
+      "community": 2
+    },
+    {
+      "label": "Letdin et al. 2023 \u2014 Tenant Credit Drives Cap Rate Variation",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/academic-papers.md",
+      "id": "letdin_2023_tenant_credit_cap_rates",
+      "community": 3
+    },
+    {
+      "label": "Chenarides et al. 2025 \u2014 Dollar Store Labor Market Impact",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/academic-papers.md",
+      "id": "chenarides_2025_dollar_store_labor",
+      "community": 2
+    },
+    {
+      "label": "Ling et al. 2020 \u2014 COVID-19 Impact on CRE Prices",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/academic-papers.md",
+      "id": "ling_2020_covid_cre_prices",
+      "community": 3
+    },
+    {
+      "label": "Spatial Cap Rate Analysis 2018 (Location Risk Premia)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/academic-papers.md",
+      "id": "spatial_cap_rate_2018",
+      "community": 6
+    },
+    {
+      "label": "SwarmAtlas-27B Baseline Eval",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/baseline-eval-atlas27b.md",
+      "id": "swarm_atlas_27b_baseline",
+      "community": 9
+    },
+    {
+      "label": "Atlas-27B General CRE Score: 94% PLATINUM",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/baseline-eval-atlas27b.md",
+      "id": "atlas_27b_general_cre_94pct",
+      "community": 9
+    },
+    {
+      "label": "Atlas-27B DG Trade Knowledge Score: 7% (1/15)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/baseline-eval-atlas27b.md",
+      "id": "atlas_27b_dg_trade_7pct",
+      "community": 9
+    },
+    {
+      "label": "Base Qwen 3.5 9B DG Score: 0 Correct (Identical to Atlas-9B)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/baseline-eval-atlas27b.md",
+      "id": "base_qwen35_9b_dg_0pct",
+      "community": 9
+    },
+    {
+      "label": "SwarmDG-9B Ship Threshold: 80%+ DG Trade Knowledge (12/15)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/baseline-eval-atlas27b.md",
+      "id": "swarm_dg_9b_ship_threshold",
+      "community": 9
+    },
+    {
+      "label": "DG Trade Knowledge Gap (Not in Pre-Training Data)",
+      "file_type": "document",
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/baseline-eval-atlas27b.md",
+      "id": "dg_knowledge_gap",
+      "community": 9
     }
   ],
   "links": [
@@ -1531,6 +1893,435 @@
       "_tgt": "lease_red_flags",
       "source": "dark_store_risk",
       "target": "lease_red_flags"
+    },
+    {
+      "relation": "creates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/closures-and-risk.md",
+      "weight": 1.0,
+      "_src": "fy2025_closure_96_stores",
+      "_tgt": "dark_store_risk",
+      "source": "dark_store_risk",
+      "target": "fy2025_closure_96_stores"
+    },
+    {
+      "relation": "results_in_cap_rate_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/closures-and-risk.md",
+      "weight": 1.0,
+      "_src": "dark_store_risk",
+      "_tgt": "dark_store_cap_rate_850plus",
+      "source": "dark_store_risk",
+      "target": "dark_store_cap_rate_850plus"
+    },
+    {
+      "relation": "mitigates",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/closures-and-risk.md",
+      "weight": 1.0,
+      "_src": "remodel_signal_renewal",
+      "_tgt": "dark_store_risk",
+      "source": "dark_store_risk",
+      "target": "remodel_signal_renewal"
+    },
+    {
+      "relation": "provides_political_risk_context_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/academic-papers.md",
+      "weight": 0.7,
+      "_src": "chenarides_2025_dollar_store_labor",
+      "_tgt": "dark_store_risk",
+      "source": "dark_store_risk",
+      "target": "chenarides_2025_dollar_store_labor"
+    },
+    {
+      "relation": "active_lender_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "weight": 1.0,
+      "_src": "cmbs_conduit_lending",
+      "_tgt": "arbor_realty",
+      "source": "cmbs_conduit_lending",
+      "target": "arbor_realty"
+    },
+    {
+      "relation": "active_lender_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "weight": 1.0,
+      "_src": "cmbs_conduit_lending",
+      "_tgt": "cbre_capital_markets",
+      "source": "cmbs_conduit_lending",
+      "target": "cbre_capital_markets"
+    },
+    {
+      "relation": "active_lender_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "weight": 1.0,
+      "_src": "cmbs_conduit_lending",
+      "_tgt": "goldman_sachs_cmbs",
+      "source": "cmbs_conduit_lending",
+      "target": "goldman_sachs_cmbs"
+    },
+    {
+      "relation": "active_lender_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "weight": 1.0,
+      "_src": "cmbs_conduit_lending",
+      "_tgt": "jp_morgan_cmbs",
+      "source": "cmbs_conduit_lending",
+      "target": "jp_morgan_cmbs"
+    },
+    {
+      "relation": "active_lender_in",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "weight": 1.0,
+      "_src": "cmbs_conduit_lending",
+      "_tgt": "walker_dunlop",
+      "source": "cmbs_conduit_lending",
+      "target": "walker_dunlop"
+    },
+    {
+      "relation": "drives_demand_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "weight": 1.0,
+      "_src": "positive_leverage_spread",
+      "_tgt": "cmbs_conduit_lending",
+      "source": "cmbs_conduit_lending",
+      "target": "positive_leverage_spread"
+    },
+    {
+      "relation": "minimum_threshold_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "weight": 1.0,
+      "_src": "dscr_requirement_120x",
+      "_tgt": "cmbs_conduit_lending",
+      "source": "cmbs_conduit_lending",
+      "target": "dscr_requirement_120x"
+    },
+    {
+      "relation": "provides_lowest_rates_in_growth_markets_like",
+      "confidence": "INFERRED",
+      "confidence_score": 0.7,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "weight": 0.7,
+      "_src": "life_company_lending",
+      "_tgt": "hot_zone_florida",
+      "source": "life_company_lending",
+      "target": "hot_zone_florida"
+    },
+    {
+      "relation": "referral_fee_paid_by",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md",
+      "weight": 0.9,
+      "_src": "financing_referral_025pct",
+      "_tgt": "arbor_realty",
+      "source": "arbor_realty",
+      "target": "financing_referral_025pct"
+    },
+    {
+      "relation": "academically_validates_credit_pricing_of",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/academic-papers.md",
+      "weight": 0.8,
+      "_src": "letdin_2023_tenant_credit_cap_rates",
+      "_tgt": "dscr_requirement_120x",
+      "source": "dscr_requirement_120x",
+      "target": "letdin_2023_tenant_credit_cap_rates"
+    },
+    {
+      "relation": "credit_now_outranks_dg_baa3",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-tree-corporate.md",
+      "weight": 1.0,
+      "_src": "dollar_tree_corporate",
+      "_tgt": "dollar_tree_credit_baa2",
+      "source": "dollar_tree_corporate",
+      "target": "dollar_tree_credit_baa2"
+    },
+    {
+      "relation": "trades_at",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-tree-corporate.md",
+      "weight": 1.0,
+      "_src": "dollar_tree_corporate",
+      "_tgt": "dollar_tree_cap_rate_757",
+      "source": "dollar_tree_corporate",
+      "target": "dollar_tree_cap_rate_757"
+    },
+    {
+      "relation": "pursues_expansion_strategy",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-tree-corporate.md",
+      "weight": 1.0,
+      "_src": "dollar_tree_corporate",
+      "_tgt": "dollar_tree_suburban_strategy",
+      "source": "dollar_tree_corporate",
+      "target": "dollar_tree_suburban_strategy"
+    },
+    {
+      "relation": "sold_subsidiary_via",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-store-ecosystem.md",
+      "weight": 1.0,
+      "_src": "dollar_tree_corporate",
+      "_tgt": "family_dollar_pe_sale",
+      "source": "dollar_tree_corporate",
+      "target": "family_dollar_pe_sale"
+    },
+    {
+      "relation": "provides_academic_basis_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/academic-papers.md",
+      "weight": 0.85,
+      "_src": "letdin_2023_tenant_credit_cap_rates",
+      "_tgt": "dollar_tree_credit_baa2",
+      "source": "dollar_tree_credit_baa2",
+      "target": "letdin_2023_tenant_credit_cap_rates"
+    },
+    {
+      "relation": "caused",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-store-ecosystem.md",
+      "weight": 1.0,
+      "_src": "family_dollar_pe_sale",
+      "_tgt": "family_dollar_guarantee_loss",
+      "source": "family_dollar_pe_sale",
+      "target": "family_dollar_guarantee_loss"
+    },
+    {
+      "relation": "resulted_in_cap_rate_expansion_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-store-ecosystem.md",
+      "weight": 1.0,
+      "_src": "family_dollar_guarantee_loss",
+      "_tgt": "family_dollar_cap_rate_865",
+      "source": "family_dollar_guarantee_loss",
+      "target": "family_dollar_cap_rate_865"
+    },
+    {
+      "relation": "strengthened",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-store-ecosystem.md",
+      "weight": 1.0,
+      "_src": "family_dollar_guarantee_loss",
+      "_tgt": "dg_competitive_moat_widened",
+      "source": "family_dollar_guarantee_loss",
+      "target": "dg_competitive_moat_widened"
+    },
+    {
+      "relation": "creates_upgrade_opportunity_for",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-store-ecosystem.md",
+      "weight": 0.85,
+      "_src": "family_dollar_guarantee_loss",
+      "_tgt": "family_office_buyer",
+      "source": "family_dollar_guarantee_loss",
+      "target": "family_office_buyer"
+    },
+    {
+      "relation": "validates_essential_retail_thesis_supporting",
+      "confidence": "INFERRED",
+      "confidence_score": 0.75,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/academic-papers.md",
+      "weight": 0.75,
+      "_src": "ling_2020_covid_cre_prices",
+      "_tgt": "dg_competitive_moat_widened",
+      "source": "dg_competitive_moat_widened",
+      "target": "ling_2020_covid_cre_prices"
+    },
+    {
+      "relation": "employs_strategy",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/family-office-buyers.md",
+      "weight": 1.0,
+      "_src": "family_office_buyer",
+      "_tgt": "family_office_hold_forever",
+      "source": "family_office_buyer",
+      "target": "family_office_hold_forever"
+    },
+    {
+      "relation": "utilizes_tax_strategy",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/family-office-buyers.md",
+      "weight": 1.0,
+      "_src": "family_office_buyer",
+      "_tgt": "step_up_basis_tax_strategy",
+      "source": "family_office_buyer",
+      "target": "step_up_basis_tax_strategy"
+    },
+    {
+      "relation": "targets_as_primary_market",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/family-office-buyers.md",
+      "weight": 0.9,
+      "_src": "family_office_buyer",
+      "_tgt": "hot_zone_florida",
+      "source": "family_office_buyer",
+      "target": "hot_zone_florida"
+    },
+    {
+      "relation": "co_tier1_investment_market_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/hot-zones-by-state.md",
+      "weight": 0.9,
+      "_src": "hot_zone_florida",
+      "_tgt": "hot_zone_texas",
+      "source": "hot_zone_florida",
+      "target": "hot_zone_texas"
+    },
+    {
+      "relation": "validates_location_risk_premium_of",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/academic-papers.md",
+      "weight": 0.8,
+      "_src": "spatial_cap_rate_2018",
+      "_tgt": "hot_zone_florida",
+      "source": "hot_zone_florida",
+      "target": "spatial_cap_rate_2018"
+    },
+    {
+      "relation": "co_tier3_yield_market_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/hot-zones-by-state.md",
+      "weight": 0.8,
+      "_src": "yield_zone_ohio",
+      "_tgt": "yield_zone_mississippi",
+      "source": "yield_zone_ohio",
+      "target": "yield_zone_mississippi"
+    },
+    {
+      "relation": "co_tier2_investment_market_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/hot-zones-by-state.md",
+      "weight": 0.9,
+      "_src": "hot_zone_georgia",
+      "_tgt": "hot_zone_north_carolina",
+      "source": "hot_zone_georgia",
+      "target": "hot_zone_north_carolina"
+    },
+    {
+      "relation": "concentrated_in_mature_markets_including",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/hot-zones-by-state.md",
+      "weight": 0.9,
+      "_src": "remodel_signal_renewal",
+      "_tgt": "hot_zone_georgia",
+      "source": "hot_zone_georgia",
+      "target": "remodel_signal_renewal"
+    },
+    {
+      "relation": "concurrent_with",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/closures-and-risk.md",
+      "weight": 0.9,
+      "_src": "popshelf_closure_45_stores",
+      "_tgt": "fy2025_closure_96_stores",
+      "source": "fy2025_closure_96_stores",
+      "target": "popshelf_closure_45_stores"
+    },
+    {
+      "relation": "produced_result",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/baseline-eval-atlas27b.md",
+      "weight": 1.0,
+      "_src": "swarm_atlas_27b_baseline",
+      "_tgt": "atlas_27b_general_cre_94pct",
+      "source": "swarm_atlas_27b_baseline",
+      "target": "atlas_27b_general_cre_94pct"
+    },
+    {
+      "relation": "produced_result",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/baseline-eval-atlas27b.md",
+      "weight": 1.0,
+      "_src": "swarm_atlas_27b_baseline",
+      "_tgt": "atlas_27b_dg_trade_7pct",
+      "source": "swarm_atlas_27b_baseline",
+      "target": "atlas_27b_dg_trade_7pct"
+    },
+    {
+      "relation": "contrasts_with_domain_specific_gap",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/baseline-eval-atlas27b.md",
+      "weight": 1.0,
+      "_src": "atlas_27b_general_cre_94pct",
+      "_tgt": "atlas_27b_dg_trade_7pct",
+      "source": "atlas_27b_general_cre_94pct",
+      "target": "atlas_27b_dg_trade_7pct"
+    },
+    {
+      "relation": "identical_score_to",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/baseline-eval-atlas27b.md",
+      "weight": 1.0,
+      "_src": "atlas_27b_dg_trade_7pct",
+      "_tgt": "base_qwen35_9b_dg_0pct",
+      "source": "atlas_27b_dg_trade_7pct",
+      "target": "base_qwen35_9b_dg_0pct"
+    },
+    {
+      "relation": "proves_existence_of",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/baseline-eval-atlas27b.md",
+      "weight": 1.0,
+      "_src": "atlas_27b_dg_trade_7pct",
+      "_tgt": "dg_knowledge_gap",
+      "source": "atlas_27b_dg_trade_7pct",
+      "target": "dg_knowledge_gap"
+    },
+    {
+      "relation": "defines_target_for",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/baseline-eval-atlas27b.md",
+      "weight": 1.0,
+      "_src": "dg_knowledge_gap",
+      "_tgt": "swarm_dg_9b_ship_threshold",
+      "source": "swarm_dg_9b_ship_threshold",
+      "target": "dg_knowledge_gap"
     }
   ],
   "hyperedges": [
@@ -1622,6 +2413,81 @@
       "confidence": "INFERRED",
       "confidence_score": 0.9,
       "source_file": "08-pipeline/magic-templates.md"
+    },
+    {
+      "id": "cmbs_dg_deal_stack",
+      "label": "CMBS DG Deal Financing Stack ($1M\u2013$3M)",
+      "nodes": [
+        "cmbs_conduit_lending",
+        "arbor_realty",
+        "cbre_capital_markets",
+        "walker_dunlop",
+        "dscr_requirement_120x",
+        "positive_leverage_spread"
+      ],
+      "relation": "forms_primary_financing_ecosystem_for_dg_stnl",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/capital-and-lending.md"
+    },
+    {
+      "id": "dollar_store_ecosystem_credit_tier",
+      "label": "Dollar Store Ecosystem Credit Hierarchy",
+      "nodes": [
+        "dollar_tree_credit_baa2",
+        "dg_competitive_moat_widened",
+        "family_dollar_guarantee_loss",
+        "family_dollar_cap_rate_865"
+      ],
+      "relation": "establishes_investment_grade_hierarchy_post_fd_sale",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/dollar-store-ecosystem.md"
+    },
+    {
+      "id": "hot_zone_tier1_capital_concentration",
+      "label": "Tier 1 State Hot Zone Capital Concentration",
+      "nodes": [
+        "hot_zone_florida",
+        "hot_zone_texas",
+        "hot_zone_georgia",
+        "family_office_buyer",
+        "positive_leverage_spread"
+      ],
+      "relation": "concentrates_1031_and_family_office_capital_in_tier1_states",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/07-market/hot-zones-by-state.md"
+    },
+    {
+      "id": "baseline_eval_knowledge_gap_proof",
+      "label": "Baseline Eval Proves DG Knowledge Gap (Both Models 0/15)",
+      "nodes": [
+        "swarm_atlas_27b_baseline",
+        "atlas_27b_dg_trade_7pct",
+        "base_qwen35_9b_dg_0pct",
+        "dg_knowledge_gap",
+        "swarm_dg_9b_ship_threshold"
+      ],
+      "relation": "proves_dg_trade_knowledge_absent_from_all_base_models",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/baseline-eval-atlas27b.md"
+    },
+    {
+      "id": "academic_validation_layer",
+      "label": "Academic Research Validation Layer (Trade + Evidence)",
+      "nodes": [
+        "letdin_2023_tenant_credit_cap_rates",
+        "ling_2020_covid_cre_prices",
+        "spatial_cap_rate_2018",
+        "chenarides_2025_dollar_store_labor",
+        "dg_competitive_moat_widened"
+      ],
+      "relation": "provides_academic_evidence_layer_for_dg_investment_thesis",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "source_file": "/home/swarm/DG-WIKI-GRAPH/09-research/academic-papers.md"
     }
   ]
 }

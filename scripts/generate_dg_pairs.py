@@ -207,28 +207,43 @@ def get_context_for_topic(docs, topic):
 
 
 def call_ollama(messages, temperature=0.7, max_tokens=1024):
-    """Call ollama to generate an answer."""
+    """Call ollama via raw generate endpoint (works with Qwen 3.5 think mode)."""
+    import re
+
+    # Build ChatML prompt from messages
+    prompt_parts = []
+    for m in messages:
+        role = m["role"]
+        content = m["content"]
+        prompt_parts.append(f"<|im_start|>{role}\n{content}<|im_end|>")
+    prompt_parts.append("<|im_start|>assistant\n")
+    prompt = "\n".join(prompt_parts)
+
     payload = json.dumps({
         "model": MODEL,
-        "messages": messages,
+        "prompt": prompt,
         "stream": False,
-        "options": {"temperature": temperature, "num_predict": max_tokens},
+        "raw": True,
+        "options": {
+            "temperature": temperature,
+            "num_predict": max_tokens,
+            "stop": ["<|im_end|>"],
+        },
     }).encode()
 
     req = urllib.request.Request(
-        f"{OLLAMA_URL}/api/chat",
+        f"{OLLAMA_URL}/api/generate",
         data=payload,
         headers={"Content-Type": "application/json"},
     )
 
     try:
-        resp = urllib.request.urlopen(req, timeout=120)
+        resp = urllib.request.urlopen(req, timeout=180)
         data = json.loads(resp.read().decode())
-        content = data.get("message", {}).get("content", "").strip()
-        if content.startswith("<think>"):
-            end = content.find("</think>")
-            if end != -1:
-                content = content[end + 8:].strip()
+        content = data.get("response", "").strip()
+        # Strip <think>...</think> blocks
+        if "<think>" in content:
+            content = re.sub(r"<think>.*?</think>", "", content, flags=re.DOTALL).strip()
         return content
     except Exception as e:
         print(f"  ERROR: {e}", file=sys.stderr)
